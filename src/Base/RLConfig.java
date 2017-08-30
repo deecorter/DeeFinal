@@ -6,7 +6,7 @@ import org.testng.annotations.BeforeTest;
 
 import Utils.WdFuntion;
 
-public class driver extends WdFuntion {
+public class RLConfig extends WdFuntion {
 
 	@BeforeTest
 	public static void main(String[] args) {

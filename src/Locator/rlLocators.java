@@ -5,6 +5,7 @@ public class rlLocators {
 	//clicksByXpath
 	public String Rlpop= ".//*[@id='1825368_ltBoxMap']/area[1]";
 	public String Rlregister= ".//*[@id='accountsel']/a";
+	public String Rlcreate= ".//*[@id='signUpButton']";
 	public String Rlmen= ".//*[@id='global-nav']/li[1]/a/span";
 	
 	//typeByXpath
