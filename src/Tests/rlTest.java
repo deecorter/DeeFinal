@@ -20,9 +20,10 @@ public class rlTest extends RLConfig {
 	public void popup(){
 		App_log.info("popup test started");
 	//close popup
-		clickByXpath (rll.Rlpop);
+		clickByXpath(rll.Rlpop);
 		
 	}
+
 	@Test
 	public void Register(){
 		App_log.info("Register");
@@ -34,6 +35,7 @@ public class rlTest extends RLConfig {
 		typeByXpath(rll.Rlcreate);
 		
 	}
+
 	@Test
 	public void Shop1(){
 		App_log.info("Shop1/Add to Cart");
