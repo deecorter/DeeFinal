@@ -9,7 +9,7 @@ import Utils.WdFuntion;
 public class RLConfig extends WdFuntion {
 
 	@BeforeTest
-	public static void main(String[] args) {
+	public void BeforeTest() {
 
 		System.setProperty("webdriver.chrome.driver", "C:\\Jar File\\chromedriver_win32\\chromedriver.exe");
 		WebDriver driver=new ChromeDriver();
