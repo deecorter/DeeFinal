@@ -1,20 +1,24 @@
 package Base;
 
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.annotations.BeforeTest;
+import org.testng.annotations.BeforeMethod;
 
 import Utils.WdFuntion;
 
 public class RLConfig extends WdFuntion {
 
-	@BeforeTest
-	public void BeforeTest() {
+	@BeforeMethod
+	public void startBrowser() {
 
-		System.setProperty("webdriver.chrome.driver", "C:\\Jar File\\chromedriver_win32\\chromedriver.exe");
-		WebDriver driver=new ChromeDriver();
+		System.out.println("Start the browser");
+		App_log.info("Browser Started");
+		System.setProperty("webdriver.chrome.driver","C://Users//Ehsanul Dodul//workspace//DeeFinal//Driver//chromedriver.exe");
+		App_log.info("Chrome driver found");
+		driver=new ChromeDriver();
+		App_log.info("Chrome Started");
 		driver.get("http://www.ralphlauren.com/");
 		driver.manage().window().maximize();
+		iwait(120);
 
 	
 
