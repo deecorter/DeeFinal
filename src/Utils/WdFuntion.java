@@ -9,6 +9,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import com.gargoylesoftware.htmlunit.javascript.host.Element;
+
 public class WdFuntion {
 
 	public static WebDriver driver;
@@ -24,23 +26,16 @@ public class WdFuntion {
 	};
 	
 	
-	public void waitByPage(WebElement element){
+	public void waitByPage(WebElement rlLocators){
 		WebDriverWait wait = new WebDriverWait(driver, 15000);
-		wait.until(ExpectedConditions.visibilityOf(element));
+		wait.until(ExpectedConditions.visibilityOf( rlLocators));
 	};
 	
 	
 	
-	public void typeByXpath(String rlLocators){
-
-
-	};
-
 	public void typeByXpath(String rlLocators, String rlValue){
 		driver.findElement(By.xpath(rlLocators)).clear();
 		driver.findElement(By.xpath(rlLocators)).sendKeys(rlValue);
-		
-
 	};
 
 

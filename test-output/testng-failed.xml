@@ -5,7 +5,7 @@
     <classes>
       <class name="Tests.rlTest">
         <methods>
-          <include name="Shop2"/>
+          <include name="Logout"/>
           <include name="startBrowser"/>
         </methods>
       </class> <!-- Tests.rlTest -->

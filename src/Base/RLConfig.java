@@ -1,13 +1,12 @@
 package Base;
 
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.annotations.BeforeMethod;
-
+import org.testng.annotations.BeforeClass;
 import Utils.WdFuntion;
 
 public class RLConfig extends WdFuntion {
 
-	@BeforeMethod
+	@BeforeClass
 	public void startBrowser() {
 
 		System.out.println("Start the browser");
